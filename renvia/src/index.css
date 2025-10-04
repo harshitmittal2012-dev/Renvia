@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ring: 0 0% 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/************************
+  Utilities
+*************************/
+.container-px { @apply px-4 sm:px-6 lg:px-8; }
+.btn { @apply inline-flex items-center justify-center rounded-full px-5 py-3 font-semibold transition-colors; }
+.btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
+.btn-outline { @apply border border-brand-600 text-brand-700 hover:bg-brand-50; }
+.badge { @apply inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium; }
+.card { @apply rounded-2xl border border-slate-200 shadow-sm bg-white; }
